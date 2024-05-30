@@ -1,7 +1,8 @@
-[gd_scene load_steps=13 format=3 uid="uid://dt7yykc77egu1"]
+[gd_scene load_steps=14 format=3 uid="uid://dt7yykc77egu1"]
 
 [ext_resource type="Script" path="res://Player/Player.gd" id="1_dpst8"]
 [ext_resource type="Texture2D" uid="uid://c5g6jfnxau7a4" path="res://Art/pixil-frame-0 (1).png" id="2_402m6"]
+[ext_resource type="Texture2D" uid="uid://cq58mo20dfhnw" path="res://Art/Idle.png" id="2_lwg5p"]
 [ext_resource type="Texture2D" uid="uid://bktousvs4pfwk" path="res://Art/pixil-frame-0 (2).png" id="3_2t07r"]
 [ext_resource type="Texture2D" uid="uid://cth1g12dshxne" path="res://Art/pixil-frame-0 (3).png" id="4_auwh7"]
 [ext_resource type="Texture2D" uid="uid://b20c35nu5r417" path="res://Art/pixil-frame-0 (4).png" id="5_q3srv"]
@@ -11,6 +12,14 @@
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_us3ni"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_lwg5p")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("2_402m6")
@@ -25,6 +34,12 @@ animations = [{
 "texture": ExtResource("5_q3srv")
 }, {
 "duration": 1.0,
+"texture": ExtResource("4_auwh7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_2t07r")
+}, {
+"duration": 1.0,
 "texture": ExtResource("6_f7208")
 }],
 "loop": true,
@@ -32,21 +47,85 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="Animation" id="Animation_c4pk6"]
-resource_name = "Run"
-length = 0.5
+[sub_resource type="Animation" id="Animation_w8qjl"]
+resource_name = "Idle"
+length = 0.1
 loop_mode = 1
-
-[sub_resource type="Animation" id="Animation_j3tkh"]
-length = 0.001
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_3ea01"]
-_data = {
-"RESET": SubResource("Animation_j3tkh"),
-"Run": SubResource("Animation_c4pk6")
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"Idle"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
 }
 
-[sub_resource type="AnimationRootNode" id="AnimationRootNode_h754q"]
+[sub_resource type="Animation" id="Animation_1mbp2"]
+resource_name = "Run"
+length = 0.65
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"Run"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6]
+}
+
+[sub_resource type="Animation" id="Animation_hbj3l"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_k7qc2"]
+_data = {
+"Idle": SubResource("Animation_w8qjl"),
+"RESET": SubResource("Animation_hbj3l"),
+"Run": SubResource("Animation_1mbp2")
+}
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 script = ExtResource("1_dpst8")
@@ -55,18 +134,14 @@ script = ExtResource("1_dpst8")
 shape = SubResource("CapsuleShape2D_rkumf")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(3, 0)
+position = Vector2(3, 3)
 scale = Vector2(0.018, 0.018)
 sprite_frames = SubResource("SpriteFrames_us3ni")
 animation = &"Run"
-frame = 4
-speed_scale = 1.5
+frame = 1
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_3ea01")
+"": SubResource("AnimationLibrary_k7qc2")
 }
-autoplay = "Run"
-
-[node name="AnimationTree" type="AnimationTree" parent="."]
-tree_root = SubResource("AnimationRootNode_h754q")
+autoplay = "Idle"
