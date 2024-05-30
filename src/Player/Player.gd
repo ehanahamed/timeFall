@@ -24,9 +24,10 @@ func _physics_process(delta):
 		velocity.x = direction * SPEED
 		anim.play("Run")
 		if direction < 0:
-			get_node("AnimatedSprite2D").flip_h = true
+		get_node("AnimatedSprite2D").flip_h = true
+		
 		else:
-			get_node("AnimatedSprite2D").flip_h = false
+		get_node("AnimatedSprite2D").flip_h = false
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		anim.play("Idle")
