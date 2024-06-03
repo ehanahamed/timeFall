@@ -34,3 +34,8 @@ func _physics_process(delta):
 		
 
 	move_and_slide()
+
+func triggerTime():
+	if Input.is_action_just_pressed(""):
+		Engine.time_scale = 0.5
+	if Input.is_action_just_pressed("")
