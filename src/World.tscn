@@ -1,33 +1,29 @@
 [gd_scene load_steps=4 format=3 uid="uid://daohdnkkjw7tk"]
 
+[ext_resource type="Script" path="res://BG.gd" id="1_2dtxv"]
 [ext_resource type="PackedScene" uid="uid://dt7yykc77egu1" path="res://Player/Player.tscn" id="1_tawxl"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_2fdvn"]
-size = Vector2(1152, 113)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_qwrll"]
-size = Vector2(148.25, 609)
+[ext_resource type="Texture2D" uid="uid://yr6embwlyqtl" path="res://Art/Background.jpg" id="2_x14ck"]
 
 [node name="World" type="Node2D"]
 
+[node name="BG" type="ParallaxBackground" parent="."]
+script = ExtResource("1_2dtxv")
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="BG"]
+motion_mirroring = Vector2(1144.9, 0)
+
+[node name="Background" type="Sprite2D" parent="BG/ParallaxLayer"]
+position = Vector2(576.25, 324)
+scale = Vector2(1.90331, 1.8)
+texture = ExtResource("2_x14ck")
+
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_tawxl")]
 position = Vector2(576, 168)
-
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(576, 607.5)
-shape = SubResource("RectangleShape2D_2fdvn")
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(1226, 272)
-shape = SubResource("RectangleShape2D_qwrll")
-
-[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(-74, 272)
-shape = SubResource("RectangleShape2D_qwrll")
 
 [node name="Panel" type="Panel" parent="."]
 offset_top = 551.0
 offset_right = 1152.0
 offset_bottom = 664.0
+
+[node name="TileMap" type="TileMap" parent="."]
+format = 2
