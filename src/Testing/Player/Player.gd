@@ -31,11 +31,14 @@ func _physics_process(delta):
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		anim.play("Idle")
-		
+	
+	if Input.is_action_just_pressed("time_normal"):
+		Engine.time_scale = 1
+	if Input.is_action_just_pressed("time_slow"):
+		Engine.time_scale = 0.5
+	if Input.is_action_just_pressed("time_fast"):
+		Engine.time_scale = 2
+	if Input.is_action_just_pressed("time_freeze"):
+		Engine.time_scale = 0
 
 	move_and_slide()
-
-func triggerTime():
-	if Input.is_action_just_pressed(""):
-		Engine.time_scale = 0.5
-	if Input.is_action_just_pressed("")
