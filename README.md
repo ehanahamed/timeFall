@@ -6,3 +6,7 @@ A Tale of 2 Citiez is a song by J. Cole. This song is very nice. I like it. Plea
 
 
 Drake is a predator btw
+
+
+
+When drake states "Kendrick just opened his mouth someone go hand him a grammy right now" it is a reference to how Kendrick has so many Grammys since he is the goat.
