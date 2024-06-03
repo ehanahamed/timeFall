@@ -30,4 +30,3 @@ offset_right = 1152.0
 offset_bottom = 664.0
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_8ts5d")]
-position = Vector2(122, 408)
