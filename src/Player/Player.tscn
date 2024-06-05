@@ -134,7 +134,7 @@ script = ExtResource("1_dpst8")
 shape = SubResource("CapsuleShape2D_rkumf")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(3, 3)
+position = Vector2(3, 2)
 scale = Vector2(0.018, 0.018)
 sprite_frames = SubResource("SpriteFrames_us3ni")
 animation = &"Idle"
