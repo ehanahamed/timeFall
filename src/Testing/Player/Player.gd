@@ -9,6 +9,7 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 @onready var anim = get_node("AnimationPlayer")
 
 var canDoubleJump = false
+var timeSlowCountdown = null
 
 func _physics_process(delta):
 	# Add the gravity.
@@ -42,15 +43,22 @@ func _physics_process(delta):
 		
 	if Input.is_action_just_pressed("time_normal"):
 		Engine.time_scale = 1
-	if Input.is_action_just_pressed("time_slow"):
-		Engine.time_scale = 0.5
-	if Input.is_action_just_pressed("time_fast"):
-		Engine.time_scale = 2
 	if Input.is_action_just_pressed("time_freeze"):
 		if Engine.time_scale == 0:
 			Engine.time_scale = 1
 		else:
 			Engine.time_scale = 0
 			canDoubleJump = true
+	if Input.is_action_just_pressed("time_slow"):
+		if Engine.time_scale == 0.5:
+			Engine.time_scale = 1
+		else:
+			Engine.time_scale = 0.5
+			timeSlowCountdown = SceneTree.create_timer()
+	if Input.is_action_just_pressed("time_fast"):
+		if Engine.time_scale == 2:
+			Engine.time_scale = 1
+		else:
+			Engine.time_scale = 2
 	
 	move_and_slide()
