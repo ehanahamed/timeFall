@@ -68,7 +68,8 @@ func _physics_process(delta):
 		else:
 			Engine.time_scale = 2
 	
+	move_and_slide()
+	
 	if health  <= 0:
 		queue_free()
 		get_tree().change_scene_to_file("res://Main.tscn")
-	move_and_slide()

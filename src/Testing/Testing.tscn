@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://bqp85nxpo7aog"]
 
-[ext_resource type="PackedScene" uid="uid://crt83e758uh6x" path="res://Testing/Player/Player.tscn" id="1_8ts5d"]
+[ext_resource type="PackedScene" uid="uid://dt7yykc77egu1" path="res://Player/Player.tscn" id="1_wsvdf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2fdvn"]
 size = Vector2(1152, 113)
@@ -44,9 +44,6 @@ offset_top = 551.0
 offset_right = 1152.0
 offset_bottom = 664.0
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("1_8ts5d")]
-position = Vector2(112, 336)
-
 [node name="Panel2" type="Panel" parent="."]
 offset_left = 368.0
 offset_top = 512.0
@@ -64,3 +61,6 @@ offset_left = 288.0
 offset_top = 264.0
 offset_right = 368.0
 offset_bottom = 280.0
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_wsvdf")]
+position = Vector2(248, 184)
