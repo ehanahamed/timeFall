@@ -1,7 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://bqp85nxpo7aog"]
+[gd_scene load_steps=5 format=3 uid="uid://bqp85nxpo7aog"]
 
 [ext_resource type="PackedScene" uid="uid://crt83e758uh6x" path="res://Testing/Player/Player.tscn" id="1_8ts5d"]
-[ext_resource type="Texture2D" uid="uid://cr5q0maawdsbk" path="res://Art/light.png" id="2_8nanx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2fdvn"]
 size = Vector2(1152, 113)
@@ -65,8 +64,3 @@ offset_left = 288.0
 offset_top = 264.0
 offset_right = 368.0
 offset_bottom = 280.0
-
-[node name="PointLight2D" type="PointLight2D" parent="."]
-position = Vector2(464, 248)
-energy = 4.76
-texture = ExtResource("2_8nanx")

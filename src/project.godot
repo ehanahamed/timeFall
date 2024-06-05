@@ -15,6 +15,15 @@ run/main_scene="res://Main.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[display]
+
+window/size/viewport_width=1120
+window/size/viewport_height=630
+window/size/resizable=false
+window/stretch/mode="viewport"
+window/stretch/scale=1.4
+window/stretch/scale_mode="integer"
+
 [input]
 
 move_left={
