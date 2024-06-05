@@ -52,7 +52,7 @@ position = Vector2(0, -20)
 scale = Vector2(0.1, 0.1)
 sprite_frames = SubResource("SpriteFrames_se7d5")
 animation = &"Fire"
-frame_progress = 0.335023
+frame_progress = 0.742448
 
 [node name="PlayerCollision" type="Area2D" parent="."]
 
