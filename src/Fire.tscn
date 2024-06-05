@@ -1,25 +1,63 @@
-[gd_scene load_steps=3 format=3 uid="uid://cjxd6j8wmk40h"]
+[gd_scene load_steps=11 format=3 uid="uid://cjxd6j8wmk40h"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_7ygy2"]
+[ext_resource type="Script" path="res://Fire.gd" id="1_ffs0v"]
+[ext_resource type="Texture2D" uid="uid://c4nxyuqnwqvki" path="res://Art/Explosion_1.png" id="1_ntvac"]
+[ext_resource type="Texture2D" uid="uid://ctjioaqtlag5s" path="res://Art/Explosion_2.png" id="2_eclta"]
+[ext_resource type="Texture2D" uid="uid://bogmsi7bb0cfm" path="res://Art/Explosion_3.png" id="3_ia4u1"]
+[ext_resource type="Texture2D" uid="uid://cq5h8gq64wmd4" path="res://Art/Explosion_4.png" id="4_x087u"]
+[ext_resource type="Texture2D" uid="uid://cs1ip2pktxpif" path="res://Art/Explosion_5.png" id="5_ut2td"]
+[ext_resource type="Texture2D" uid="uid://fre4pui05y8u" path="res://Art/Explosion_6.png" id="6_xpf0y"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x3abg"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_se7d5"]
 animations = [{
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_ntvac")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_eclta")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ia4u1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_x087u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ut2td")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_xpf0y")
+}],
 "loop": true,
 "name": &"Fire",
-"speed": 5.0
+"speed": 8.0
 }]
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g46c5"]
+size = Vector2(40, 40)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CapsuleShape2D_7ygy2")
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_ffs0v")
+
+[node name="SmallShape" type="CollisionShape2D" parent="."]
+visible = false
+scale = Vector2(1e-05, 1e-05)
+shape = SubResource("RectangleShape2D_x3abg")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -20)
+scale = Vector2(0.1, 0.1)
 sprite_frames = SubResource("SpriteFrames_se7d5")
 animation = &"Fire"
-frame_progress = 0.598737
-speed_scale = 1.5
+frame_progress = 0.335023
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-root_node = NodePath("../CollisionShape2D")
+[node name="PlayerCollision" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerCollision"]
+position = Vector2(0, -20)
+shape = SubResource("RectangleShape2D_g46c5")
+
+[connection signal="body_entered" from="PlayerCollision" to="." method="_on_player_collision_body_entered"]

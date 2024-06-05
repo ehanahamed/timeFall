@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://daohdnkkjw7tk"]
+[gd_scene load_steps=9 format=3 uid="uid://daohdnkkjw7tk"]
 
 [ext_resource type="Texture2D" uid="uid://kc08nfj5ea67" path="res://Art/NEWtileset.png" id="1_0k8br"]
 [ext_resource type="Script" path="res://BG.gd" id="1_2dtxv"]
 [ext_resource type="PackedScene" uid="uid://dt7yykc77egu1" path="res://Player/Player.tscn" id="1_tawxl"]
 [ext_resource type="Texture2D" uid="uid://yr6embwlyqtl" path="res://Art/Background.jpg" id="2_x14ck"]
 [ext_resource type="Script" path="res://HP.gd" id="5_bvlxv"]
+[ext_resource type="PackedScene" uid="uid://cjxd6j8wmk40h" path="res://Fire.tscn" id="6_onjwd"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2iddw"]
 texture = ExtResource("1_0k8br")
@@ -444,3 +445,6 @@ text = "HP"
 horizontal_alignment = 1
 vertical_alignment = 1
 script = ExtResource("5_bvlxv")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("6_onjwd")]
+position = Vector2(560, 568)
