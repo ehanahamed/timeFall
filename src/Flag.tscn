@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://5j87qnjpg0vr"]
+
+[ext_resource type="Texture2D" uid="uid://bthlyf55u48ng" path="res://Art/red-flag-with-pole-in-pixel-art-style-vector-removebg-preview.png" id="1_swcav"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h3t20"]
+size = Vector2(28, 42)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jvlfv"]
+size = Vector2(28, 42)
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(3.5, 5.5)
+scale = Vector2(0.865, 0.975)
+shape = SubResource("RectangleShape2D_h3t20")
+
+[node name="Flag" type="Sprite2D" parent="."]
+scale = Vector2(0.162, 0.162)
+texture = ExtResource("1_swcav")
+
+[node name="PlayerCollision" type="Area2D" parent="."]
+position = Vector2(3.5, 5.5)
+scale = Vector2(0.865, 0.975)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="PlayerCollision"]
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_jvlfv")
