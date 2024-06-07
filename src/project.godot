@@ -13,7 +13,6 @@ config_version=5
 config/name="Time Fall"
 run/main_scene="res://Main.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
-config/icon="res://icon.svg"
 
 [autoload]
 
@@ -24,10 +23,9 @@ Utils="*res://Global/Utils.gd"
 
 window/size/viewport_width=1120
 window/size/viewport_height=630
-window/size/resizable=false
-window/stretch/mode="viewport"
-window/stretch/scale=1.4
-window/stretch/scale_mode="integer"
+window/size/mode=3
+window/size/initial_position_type=3
+window/stretch/mode="canvas_items"
 
 [input]
 
@@ -82,8 +80,4 @@ textures/canvas_textures/default_texture_filter=0
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
 textures/vram_compression/import_etc2_astc=true
-textures/default_filters/use_nearest_mipmap_filter=true
-textures/default_filters/anisotropic_filtering_level=0
 anti_aliasing/screen_space_roughness_limiter/enabled=false
-textures/decals/filter=0
-textures/light_projectors/filter=0
