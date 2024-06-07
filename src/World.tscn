@@ -432,18 +432,6 @@ texture = ExtResource("2_x14ck")
 [node name="Player" parent="Player" instance=ExtResource("1_tawxl")]
 position = Vector2(96, 552)
 
-[node name="Label" type="Label" parent="Player/Player"]
-offset_left = 160.0
-offset_top = -304.0
-offset_right = 375.0
-offset_bottom = -151.0
-text = "Keybinds:
-WAD or arrow keys to move
-F to freeze time
-S to slow down time
-ESC for pause
-T for time travel"
-
 [node name="UI" type="CanvasLayer" parent="."]
 
 [node name="HP" type="Label" parent="UI"]
@@ -460,3 +448,15 @@ script = ExtResource("5_bvlxv")
 
 [node name="Fire" parent="." instance=ExtResource("6_onjwd")]
 position = Vector2(560, 568)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 256.0
+offset_top = 248.0
+offset_right = 471.0
+offset_bottom = 401.0
+text = "Keybinds:
+WAD or arrow keys to move
+F to freeze time
+S to slow down time
+ESC for pause
+T for time travel"
