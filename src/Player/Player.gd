@@ -22,7 +22,10 @@ func _physics_process(delta):
 	# Handle jump.
 	if Engine.time_scale != 0:
 		if Input.is_action_just_pressed("move_jump") and (is_on_floor() or canDoubleJump):
-			velocity.y = JUMP_VELOCITY
+			if Engine.time_scale == 0.5:
+				velocity.y = JUMP_VELOCITY*1.5
+			else:
+				velocity.y = JUMP_VELOCITY
 			canDoubleJump = false
 
 	# Get the input direction and handle the movement/deceleration.
@@ -67,7 +70,6 @@ func _physics_process(delta):
 			Engine.time_scale = 1
 		else:
 			Engine.time_scale = 2
-	
 	move_and_slide()
 	
 	if health  <= 0:
