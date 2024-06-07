@@ -36,8 +36,9 @@ animations = [{
 "speed": 8.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_g46c5"]
-size = Vector2(40, 40)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ekgbh"]
+radius = 16.0
+height = 48.0
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 script = ExtResource("1_ffs0v")
@@ -52,12 +53,12 @@ position = Vector2(0, -20)
 scale = Vector2(0.1, 0.1)
 sprite_frames = SubResource("SpriteFrames_se7d5")
 animation = &"Fire"
-frame_progress = 0.279613
+frame_progress = 0.512049
 
 [node name="PlayerCollision" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerCollision"]
-position = Vector2(0, -20)
-shape = SubResource("RectangleShape2D_g46c5")
+position = Vector2(0, -7)
+shape = SubResource("CapsuleShape2D_ekgbh")
 
 [connection signal="body_entered" from="PlayerCollision" to="." method="_on_player_collision_body_entered"]
