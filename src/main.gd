@@ -1,7 +1,8 @@
 extends Node2D
 
-
-
+func _redy():
+	Utils.saveGame()
+	Utils.loadGame()
 func _on_quit_pressed():
 	get_tree().quit()
 
