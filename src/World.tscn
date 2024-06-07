@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://daohdnkkjw7tk"]
+[gd_scene load_steps=12 format=3 uid="uid://daohdnkkjw7tk"]
 
 [ext_resource type="Texture2D" uid="uid://kc08nfj5ea67" path="res://Art/NEWtileset.png" id="1_0k8br"]
 [ext_resource type="Script" path="res://BG.gd" id="1_2dtxv"]
@@ -6,6 +6,9 @@
 [ext_resource type="Texture2D" uid="uid://yr6embwlyqtl" path="res://Art/Background.jpg" id="2_x14ck"]
 [ext_resource type="Script" path="res://HP.gd" id="5_bvlxv"]
 [ext_resource type="PackedScene" uid="uid://cjxd6j8wmk40h" path="res://Fire.tscn" id="6_onjwd"]
+[ext_resource type="Texture2D" uid="uid://dbxq04k0pv411" path="res://Art/HelpfulSign.png" id="7_hqcrm"]
+[ext_resource type="FontFile" uid="uid://cnodyc1q2wul5" path="res://Art/GohuFont14NerdFontPropo-Regular.ttf" id="8_k6xg0"]
+[ext_resource type="PackedScene" uid="uid://5j87qnjpg0vr" path="res://Flag.tscn" id="9_ldv1k"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2iddw"]
 texture = ExtResource("1_0k8br")
@@ -430,7 +433,8 @@ texture = ExtResource("2_x14ck")
 [node name="Player" type="Node2D" parent="."]
 
 [node name="Player" parent="Player" instance=ExtResource("1_tawxl")]
-position = Vector2(96, 552)
+z_index = 1
+position = Vector2(97, 552)
 
 [node name="UI" type="CanvasLayer" parent="."]
 
@@ -449,14 +453,36 @@ script = ExtResource("5_bvlxv")
 [node name="Fire" parent="." instance=ExtResource("6_onjwd")]
 position = Vector2(560, 568)
 
+[node name="HelpfulSign" type="Sprite2D" parent="."]
+position = Vector2(286.75, 492)
+scale = Vector2(0.549, 0.4)
+texture = ExtResource("7_hqcrm")
+
 [node name="Label" type="Label" parent="."]
-offset_left = 256.0
-offset_top = 248.0
-offset_right = 471.0
-offset_bottom = 401.0
+offset_left = 640.0
+offset_top = 240.0
+offset_right = 855.0
+offset_bottom = 393.0
 text = "Keybinds:
 WAD or arrow keys to move
 F to freeze time
 S to slow down time
 ESC for pause
 T for time travel"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 211.5
+offset_top = 424.0
+offset_right = 364.5
+offset_bottom = 473.0
+size_flags_horizontal = 8
+theme_override_fonts/font = ExtResource("8_k6xg0")
+theme_override_font_sizes/font_size = 14
+text = "Use WAD or arrow
+keys to move"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Flag" parent="." instance=ExtResource("9_ldv1k")]
+position = Vector2(1051, 516)
+scale = Vector2(2, 2)
