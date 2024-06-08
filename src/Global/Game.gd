@@ -1,4 +1,3 @@
 extends Node
 
-
-var playerHP = 3
+var level = 0
