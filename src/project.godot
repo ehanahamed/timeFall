@@ -11,9 +11,13 @@ config_version=5
 [application]
 
 config/name="Time Fall"
+config/description="2D pixel-art platformer with time-control"
+config/version="1.0.0"
 run/main_scene="res://Main.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 boot_splash/bg_color=Color(0.133333, 0.133333, 0.133333, 1)
+boot_splash/show_image=false
+config/icon="res://icon.png"
 
 [autoload]
 
