@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dpspsbacrkapk"
+path="res://.godot/imported/GAME.mp3.mp3-85a5571e2fd38e75ea6817ec1dcdaa48.mp3str"
+
+[deps]
+
+source_file="res://Music & SFX/GAME.mp3.mp3"
+dest_files=["res://.godot/imported/GAME.mp3.mp3-85a5571e2fd38e75ea6817ec1dcdaa48.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

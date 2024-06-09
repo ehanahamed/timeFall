@@ -8,7 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://cjxd6j8wmk40h" path="res://Fire.tscn" id="6_egbs3"]
 [ext_resource type="Texture2D" uid="uid://dbxq04k0pv411" path="res://Art/HelpfulSign.png" id="7_6u7u6"]
 [ext_resource type="PackedScene" uid="uid://5j87qnjpg0vr" path="res://Flag.tscn" id="9_k4oss"]
-[ext_resource type="AudioStream" uid="uid://dpspsbacrkapk" path="res://Music/GAME.mp3.mp3" id="9_nw015"]
+[ext_resource type="AudioStream" uid="uid://dpspsbacrkapk" path="res://Music & SFX/GAME.mp3.mp3" id="9_nw015"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2iddw"]
 texture = ExtResource("1_mu8hb")
