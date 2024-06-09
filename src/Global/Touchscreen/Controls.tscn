@@ -16,6 +16,7 @@ scale = Vector2(0.2, 0.2)
 texture_normal = ExtResource("1_jqdqw")
 texture_pressed = ExtResource("2_udd58")
 action = "move_left"
+visibility_mode = 1
 
 [node name="Right" type="TouchScreenButton" parent="."]
 z_index = 100
@@ -24,6 +25,7 @@ scale = Vector2(0.2, 0.2)
 texture_normal = ExtResource("3_dvgb8")
 texture_pressed = ExtResource("4_2e3jx")
 action = "move_right"
+visibility_mode = 1
 
 [node name="Jump" type="TouchScreenButton" parent="."]
 z_index = 100
@@ -32,3 +34,4 @@ scale = Vector2(0.2, 0.2)
 texture_normal = ExtResource("5_3qo8n")
 texture_pressed = ExtResource("6_4hcyp")
 action = "move_jump"
+visibility_mode = 1

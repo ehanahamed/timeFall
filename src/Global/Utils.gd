@@ -18,8 +18,3 @@ func loadGame():
 			var jsondata = JSON.parse_string(file.get_line())
 			if jsondata:
 				Game.level = jsondata["level"]
-
-func handleTouchControls():
-	if OS.has_feature("android") or OS.has_feature("web_android") or true:
-		var touchControls = load("res://Global/Touchscreen/Controls.tscn")
-		add_child(touchControls.instantiate())

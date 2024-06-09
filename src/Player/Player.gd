@@ -12,7 +12,8 @@ var canTimeFreeze = true
 var canDoubleJump = false
 
 func _ready():
-	Utils.handleTouchControls()
+	var touchControls = load("res://Global/Touchscreen/Controls.tscn")
+	add_child(touchControls.instantiate())
 
 func _physics_process(delta):
 	# Add the gravity.
