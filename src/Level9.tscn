@@ -1,8 +1,8 @@
-[gd_scene load_steps=11 format=3 uid="uid://bcay63nw8jy01"]
+[gd_scene load_steps=11 format=3 uid="uid://bf25b0o0lmhlc"]
 
 [ext_resource type="Texture2D" uid="uid://kc08nfj5ea67" path="res://Art/NEWtileset.png" id="1_agl0s"]
 [ext_resource type="Script" path="res://BG.gd" id="2_d8y0l"]
-[ext_resource type="Texture2D" uid="uid://yr6embwlyqtl" path="res://Art/Background.jpg" id="3_35qdr"]
+[ext_resource type="Texture2D" uid="uid://yr6embwlyqtl" path="res://Art/bg.jpg" id="3_35qdr"]
 [ext_resource type="PackedScene" uid="uid://dt7yykc77egu1" path="res://Player/Player.tscn" id="4_x7h3m"]
 [ext_resource type="Script" path="res://HP.gd" id="5_rje44"]
 [ext_resource type="PackedScene" uid="uid://cjxd6j8wmk40h" path="res://Fire.tscn" id="6_iskdw"]
@@ -409,7 +409,7 @@ texture = ExtResource("1_agl0s")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_2iddw")
 
-[node name="Level1" type="Node2D"]
+[node name="Level" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(0, 40)
