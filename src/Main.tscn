@@ -7,17 +7,17 @@
 script = ExtResource("1_g3qpp")
 
 [node name="Play" type="Button" parent="."]
-offset_left = 304.0
-offset_top = 141.0
-offset_right = 816.0
-offset_bottom = 334.0
+offset_left = 360.0
+offset_top = 212.0
+offset_right = 760.0
+offset_bottom = 312.0
 text = "Play"
 
 [node name="Quit" type="Button" parent="."]
-offset_left = 304.0
+offset_left = 360.0
 offset_top = 369.0
-offset_right = 816.0
-offset_bottom = 562.0
+offset_right = 760.0
+offset_bottom = 469.0
 text = "Quit"
 
 [node name="BG" parent="." instance=ExtResource("2_47qdx")]
