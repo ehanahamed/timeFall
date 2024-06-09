@@ -36,5 +36,13 @@ stream = ExtResource("4_qp6pv")
 autoplay = true
 bus = &"Music"
 
+[node name="Names" type="Label" parent="."]
+offset_left = 20.0
+offset_top = 580.0
+offset_right = 683.0
+offset_bottom = 618.0
+theme_override_font_sizes/font_size = 24
+text = "Ehan Ahamed, Evan Albaz, & Mason Safran"
+
 [connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
