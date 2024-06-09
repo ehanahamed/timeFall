@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://cq5h8gq64wmd4" path="res://Art/Explosion_4.png" id="4_x087u"]
 [ext_resource type="Texture2D" uid="uid://cs1ip2pktxpif" path="res://Art/Explosion_5.png" id="5_ut2td"]
 [ext_resource type="Texture2D" uid="uid://fre4pui05y8u" path="res://Art/Explosion_6.png" id="6_xpf0y"]
-[ext_resource type="AudioStream" uid="uid://d1djbyy7l88dd" path="res://Music & SFX/fire effects.mp3.mp3" id="8_0evmt"]
+[ext_resource type="AudioStream" uid="uid://d1djbyy7l88dd" path="res://Music & SFX/fire effects.mp3.mp3" id="8_bcilm"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x3abg"]
 
@@ -57,7 +57,7 @@ animation = &"Fire"
 frame_progress = 0.319453
 
 [node name="FireSounds" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("8_0evmt")
+stream = ExtResource("8_bcilm")
 volume_db = -30.0
 autoplay = true
 bus = &"SFX"

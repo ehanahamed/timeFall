@@ -67,6 +67,8 @@ func _physics_process(delta):
 			Engine.time_scale = 1
 		else:
 			Engine.time_scale = 2
+	if Input.is_action_just_pressed("time_travel"):
+		get_tree().change_scene_to_file("res://Level" + str(Game.level) + "ALT.tscn")
 	move_and_slide()
 	
 	if Game.health  <= 0:
