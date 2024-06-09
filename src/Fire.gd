@@ -10,15 +10,15 @@ func _process(delta):
 var stillColliding = false
 func onStillColliding(body):
 	if stillColliding:
-		body.health -= 1
-		await get_tree().create_timer(1.0, true, false, false).timeout
+		Game.health -= 1
+		await get_tree().create_timer(0.5, true, false, false).timeout
 		onStillColliding(body)
 
 func _on_player_collision_body_entered(body):
 	if body.name == "Player":
-		body.health -= 1
+		Game.health -= 1
 		stillColliding = true
-		await get_tree().create_timer(1.0, true, false, false).timeout
+		await get_tree().create_timer(0.5, true, false, false).timeout
 		onStillColliding(body)
 
 func _on_player_collision_body_exited(body):
