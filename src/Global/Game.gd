@@ -6,12 +6,12 @@ var travelAlt = false
 var travelX = 100
 var travelY = 550
 
-func timeTravel():
+func travelScene():
 	if travelAlt == false:
 		get_tree().change_scene_to_file("Level" + str(level) + "Alt.tscn")
-		get_node("/root/Level" + str(level) + "Alt/Player").position.x = travelX
-		get_node("/root/Level" + str(level) + "Alt/Player").position.y = travelY
 	else:
 		get_tree().change_scene_to_file("Level" + str(level) + ".tscn")
-		get_node("/root/Level" + str(level) + "/Player").position.x = travelX
-		get_node("/root/Level" + str(level) + "/Player").position.y = travelY
+
+func travelPlayer():
+	get_tree().root.get_node("Level/Player/Player").position.x = travelX
+	get_tree().root.get_node("Level/Player/Player").position.y = travelY

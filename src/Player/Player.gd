@@ -69,7 +69,9 @@ func _physics_process(delta):
 			Engine.time_scale = 2
 	if Input.is_action_just_pressed("time_travel"):
 		if Game.level >= 3:
-			Game.timeTravel()
+			Game.travelX = position.x
+			Game.travelY = position.y
+			Game.travelScene()
 			
 	move_and_slide()
 	
@@ -77,3 +79,7 @@ func _physics_process(delta):
 		queue_free()
 		get_node("/root/Controls").queue_free()
 		get_tree().change_scene_to_file("res://Main.tscn")
+
+
+func _on_level_ready():
+	Game.travelPlayer()
