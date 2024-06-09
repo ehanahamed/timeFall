@@ -560,7 +560,7 @@ vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
 
 [node name="Flag" parent="." instance=ExtResource("9_mewpp")]
-position = Vector2(835, 188)
+position = Vector2(835, 180)
 scale = Vector2(2, 2)
 
 [node name="GameBGMusic" type="AudioStreamPlayer2D" parent="."]
