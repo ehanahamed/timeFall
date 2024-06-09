@@ -42,6 +42,7 @@ scale = Vector2(0.2, 0.2)
 texture_normal = ExtResource("5_8mxpm")
 texture_pressed = ExtResource("6_u4r6d")
 action = "move_jump"
+visibility_mode = 1
 
 [node name="Freeze" type="TouchScreenButton" parent="."]
 z_index = 100
@@ -50,6 +51,7 @@ scale = Vector2(0.2, 0.2)
 texture_normal = ExtResource("7_66uy0")
 texture_pressed = ExtResource("8_32whl")
 action = "time_freeze"
+visibility_mode = 1
 
 [node name="Slow" type="TouchScreenButton" parent="."]
 z_index = 100
@@ -58,6 +60,7 @@ scale = Vector2(0.2, 0.2)
 texture_normal = ExtResource("9_4tvk3")
 texture_pressed = ExtResource("10_0osny")
 action = "time_slow"
+visibility_mode = 1
 
 [node name="Timetravel" type="TouchScreenButton" parent="."]
 z_index = 100
@@ -66,3 +69,4 @@ scale = Vector2(0.2, 0.2)
 texture_normal = ExtResource("11_sc0ga")
 texture_pressed = ExtResource("12_26yfh")
 action = "time_travel"
+visibility_mode = 1
