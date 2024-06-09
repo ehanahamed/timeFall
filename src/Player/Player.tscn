@@ -1,11 +1,11 @@
 [gd_scene load_steps=14 format=3 uid="uid://dt7yykc77egu1"]
 
 [ext_resource type="Script" path="res://Player/Player.gd" id="1_dpst8"]
-[ext_resource type="Texture2D" uid="uid://c5g6jfnxau7a4" path="res://Art/pixil-frame-1.png" id="2_402m6"]
+[ext_resource type="Texture2D" path="res://Art/pixil-frame-0 (1).png" id="2_402m6"]
 [ext_resource type="Texture2D" uid="uid://cq58mo20dfhnw" path="res://Art/Idle.png" id="2_lwg5p"]
-[ext_resource type="Texture2D" uid="uid://bktousvs4pfwk" path="res://Art/pixil-frame-2.png" id="3_2t07r"]
-[ext_resource type="Texture2D" uid="uid://cth1g12dshxne" path="res://Art/pixil-frame-3.png" id="4_auwh7"]
-[ext_resource type="Texture2D" uid="uid://b20c35nu5r417" path="res://Art/pixil-frame-4.png" id="5_q3srv"]
+[ext_resource type="Texture2D" path="res://Art/pixil-frame-0 (2).png" id="3_2t07r"]
+[ext_resource type="Texture2D" path="res://Art/pixil-frame-0 (3).png" id="4_auwh7"]
+[ext_resource type="Texture2D" path="res://Art/pixil-frame-0 (4).png" id="5_q3srv"]
 [ext_resource type="Texture2D" uid="uid://xtofswuw48rw" path="res://Art/pixil-frame-0.png" id="6_f7208"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rkumf"]
@@ -137,7 +137,7 @@ shape = SubResource("CapsuleShape2D_rkumf")
 position = Vector2(3, 2)
 scale = Vector2(0.018, 0.018)
 sprite_frames = SubResource("SpriteFrames_us3ni")
-animation = &"Idle"
+animation = &"Run"
 metadata/_edit_lock_ = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]

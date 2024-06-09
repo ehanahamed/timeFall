@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://5q3aikes0n06"]
+
+[ext_resource type="AudioStream" uid="uid://bqfa2xphhksws" path="res://Audio/timeEffect.mp3" id="1_wcwng"]
+
+[node name="TimeTravel" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_wcwng")
