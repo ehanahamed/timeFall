@@ -11,7 +11,7 @@ script = ExtResource("1_gnenv")
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="."]
 motion_scale = Vector2(0.8, 0.8)
-motion_mirroring = Vector2(2302, 0)
+motion_mirroring = Vector2(2110, 0)
 
 [node name="Background" type="Sprite2D" parent="ParallaxLayer"]
 position = Vector2(576.25, 324)
@@ -19,9 +19,10 @@ scale = Vector2(1.90331, 1.8)
 texture = ExtResource("2_54dbg")
 
 [node name="Background2" type="Sprite2D" parent="ParallaxLayer"]
-position = Vector2(1727.75, 324)
+position = Vector2(1534.75, 324)
 scale = Vector2(1.90331, 1.8)
 texture = ExtResource("2_54dbg")
+flip_h = true
 
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="."]
 motion_mirroring = Vector2(1950, 0)
