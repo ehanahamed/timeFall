@@ -13,8 +13,8 @@ var canDoubleJump = false
 
 func _ready():
 	var touchControls = load("res://Global/Touchscreen/Controls.tscn")
-	add_child(touchControls.instantiate())
-
+	get_node("/root").add_child(touchControls.instantiate())
+	
 func _physics_process(delta):
 	# Add the gravity.
 	if not is_on_floor():
@@ -78,4 +78,5 @@ func _physics_process(delta):
 	
 	if health  <= 0:
 		queue_free()
+		get_node("/root/Controls").queue_free()
 		get_tree().change_scene_to_file("res://Main.tscn")
