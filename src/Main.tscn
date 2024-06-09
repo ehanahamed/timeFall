@@ -26,7 +26,7 @@ text = "Quit"
 
 [node name="BG" parent="." instance=ExtResource("2_47qdx")]
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Logo" type="Sprite2D" parent="."]
 position = Vector2(560, 100)
 scale = Vector2(0.4, 0.4)
 texture = ExtResource("3_lcx5i")
