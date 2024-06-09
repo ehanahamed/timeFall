@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://bwm5ath1cap8n"]
+[gd_scene load_steps=13 format=3 uid="uid://bwm5ath1cap8n"]
 
 [ext_resource type="Texture2D" uid="uid://8toen6gdnirj" path="res://Art/left.png" id="1_jqdqw"]
 [ext_resource type="Texture2D" uid="uid://dlblh6xfibe7e" path="res://Art/leftAlt.png" id="2_udd58"]
@@ -6,6 +6,12 @@
 [ext_resource type="Texture2D" uid="uid://co5qun1hnhv06" path="res://Art/rightAlt.png" id="4_2e3jx"]
 [ext_resource type="Texture2D" uid="uid://bkyvw4laqh2fo" path="res://Art/jump.png" id="5_3qo8n"]
 [ext_resource type="Texture2D" uid="uid://csfn80fgos5n6" path="res://Art/jumpAlt.png" id="6_4hcyp"]
+[ext_resource type="Texture2D" uid="uid://bi1wlvf406hf1" path="res://Art/freeze.png" id="7_0jwgf"]
+[ext_resource type="Texture2D" uid="uid://do2sm08kfiqjk" path="res://Art/freezeAlt.png" id="8_4ojqd"]
+[ext_resource type="Texture2D" uid="uid://bqic0jum3dfrq" path="res://Art/slow.png" id="9_p7fix"]
+[ext_resource type="Texture2D" uid="uid://d0w365royovcq" path="res://Art/slowAlt.png" id="10_javve"]
+[ext_resource type="Texture2D" uid="uid://it5xna40eu5a" path="res://Art/timetravel.png" id="11_wnvp6"]
+[ext_resource type="Texture2D" uid="uid://djkks623b35au" path="res://Art/timetravelAlt.png" id="12_ypuo7"]
 
 [node name="Controls" type="Node2D"]
 
@@ -34,4 +40,31 @@ scale = Vector2(0.2, 0.2)
 texture_normal = ExtResource("5_3qo8n")
 texture_pressed = ExtResource("6_4hcyp")
 action = "move_jump"
+visibility_mode = 1
+
+[node name="Freeze" type="TouchScreenButton" parent="."]
+z_index = 100
+position = Vector2(880, 500)
+scale = Vector2(0.2, 0.2)
+texture_normal = ExtResource("7_0jwgf")
+texture_pressed = ExtResource("8_4ojqd")
+action = "time_freeze"
+visibility_mode = 1
+
+[node name="Slow" type="TouchScreenButton" parent="."]
+z_index = 100
+position = Vector2(880, 380)
+scale = Vector2(0.2, 0.2)
+texture_normal = ExtResource("9_p7fix")
+texture_pressed = ExtResource("10_javve")
+action = "time_slow"
+visibility_mode = 1
+
+[node name="Timetravel" type="TouchScreenButton" parent="."]
+z_index = 100
+position = Vector2(1000, 380)
+scale = Vector2(0.2, 0.2)
+texture_normal = ExtResource("11_wnvp6")
+texture_pressed = ExtResource("12_ypuo7")
+action = "time_travel"
 visibility_mode = 1
