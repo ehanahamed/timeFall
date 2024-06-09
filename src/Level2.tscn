@@ -437,7 +437,7 @@ texture = ExtResource("3_temyv")
 
 [node name="Player" parent="Player" instance=ExtResource("4_qhfq7")]
 z_index = 1
-position = Vector2(109, 490)
+position = Vector2(40, 490)
 
 [node name="UI" type="CanvasLayer" parent="."]
 
