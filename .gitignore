@@ -3,4 +3,6 @@
 src/.godot/
 # Game progress
 src/savefile
+# Android Keystore
+build/android/timefall.keystore
 
