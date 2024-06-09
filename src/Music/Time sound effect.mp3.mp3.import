@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bqfa2xphhksws"
+path="res://.godot/imported/Time sound effect.mp3.mp3-8945003dcab15032972104201d9724ca.mp3str"
+
+[deps]
+
+source_file="res://Music/Time sound effect.mp3.mp3"
+dest_files=["res://.godot/imported/Time sound effect.mp3.mp3-8945003dcab15032972104201d9724ca.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
