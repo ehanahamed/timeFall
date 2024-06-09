@@ -7,6 +7,8 @@ const JUMP_VELOCITY = -400.0
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 @onready var anim = get_node("AnimationPlayer")
 
+
+
 var canTimeFreeze = true
 var canExtraJump = false
 
@@ -58,10 +60,11 @@ func _physics_process(delta):
 			Engine.time_scale = 1
 			canTimeFreeze = false
 	if Input.is_action_just_pressed("time_slow"):
-		if Engine.time_scale == 0.5:
-			Engine.time_scale = 1
-		else:
-			Engine.time_scale = 0.5
+		if Game.level >= 2:
+			if Engine.time_scale == 0.5:
+				Engine.time_scale = 1
+			else:
+				Engine.time_scale = 0.5
 	if Input.is_action_just_pressed("time_fast"):
 		if Engine.time_scale == 2:
 			Engine.time_scale = 1
