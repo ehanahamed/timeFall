@@ -13,7 +13,8 @@ func _process(delta):
 
 func _on_player_collision_body_entered(body):
 	if body.name == "Player":
-		Game.level += 1
+		if Game.level < 10:
+			Game.level += 1
 		get_node("/root/Controls").queue_free()
 		get_tree().change_scene_to_file("res://Level" + str(Game.level) + ".tscn")
 		Utils.saveGame()
