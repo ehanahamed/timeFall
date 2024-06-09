@@ -11,6 +11,9 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var canTimeFreeze = true
 var canDoubleJump = false
 
+func _ready():
+	Utils.handleTouchControls()
+
 func _physics_process(delta):
 	# Add the gravity.
 	if not is_on_floor():
