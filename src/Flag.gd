@@ -13,6 +13,7 @@ func _process(delta):
 
 func _on_player_collision_body_entered(body):
 	if body.name == "Player":
+		Engine.time_scale = 1
 		if Game.level < 10:
 			Game.level += 1
 		get_node("/root/Controls").queue_free()

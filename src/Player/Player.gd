@@ -53,12 +53,13 @@ func _physics_process(delta):
 	if Input.is_action_just_pressed("time_normal"):
 		Engine.time_scale = 1
 	if Input.is_action_just_pressed("time_freeze"):
-		if Engine.time_scale != 0 and canTimeFreeze:
-			Engine.time_scale = 0
-			canExtraJump = true
-		elif Engine.time_scale == 0:
-			Engine.time_scale = 1
-			canTimeFreeze = false
+		if Game.level >= 4:
+			if Engine.time_scale != 0 and canTimeFreeze:
+				Engine.time_scale = 0
+				canExtraJump = true
+			elif Engine.time_scale == 0:
+				Engine.time_scale = 1
+				canTimeFreeze = false
 	if Input.is_action_just_pressed("time_slow"):
 		if Game.level >= 2:
 			if Engine.time_scale == 0.5:
@@ -82,6 +83,7 @@ func _physics_process(delta):
 		queue_free()
 		get_node("/root/Controls").queue_free()
 		get_tree().change_scene_to_file("res://Main.tscn")
+		Engine.time_scale = 1
 
 func _on_level_ready():
 	Game.travelPlayer()
