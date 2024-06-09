@@ -8,7 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://cjxd6j8wmk40h" path="res://Fire.tscn" id="6_k61ij"]
 [ext_resource type="Texture2D" uid="uid://dbxq04k0pv411" path="res://Art/HelpfulSign.png" id="7_cv8wa"]
 [ext_resource type="PackedScene" uid="uid://5j87qnjpg0vr" path="res://Flag.tscn" id="8_wuqfo"]
-[ext_resource type="AudioStream" uid="uid://dpspsbacrkapk" path="res://Audio/gameLevel.mp3" id="9_1ptgq"]
+[ext_resource type="AudioStream" uid="uid://dm2oi86es4utk" path="res://Audio/gameLevelAlt.mp3" id="9_c6x4r"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2iddw"]
 texture = ExtResource("1_eos3e")
@@ -483,7 +483,7 @@ position = Vector2(1051, 372)
 scale = Vector2(2, 2)
 
 [node name="GameBGMusic" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("9_1ptgq")
+stream = ExtResource("9_c6x4r")
 autoplay = true
 
 [connection signal="ready" from="." to="Player/Player" method="_on_level_ready"]
