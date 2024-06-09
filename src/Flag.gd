@@ -13,4 +13,6 @@ func _process(delta):
 
 func _on_player_collision_body_entered(body):
 	if body.name == "Player":
-		get_tree().change_scene_to_file("res://Level2.tscn")
+		Game.level += 1
+		get_tree().change_scene_to_file("res://Level" + str(Game.level) + ".tscn")
+		Utils.saveGame()
