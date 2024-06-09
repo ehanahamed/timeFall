@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://kc08nfj5ea67" path="res://Art/NEWtileset.png" id="1_mu8hb"]
 [ext_resource type="Script" path="res://BG.gd" id="2_6xevx"]
-[ext_resource type="Texture2D" uid="uid://yr6embwlyqtl" path="res://Art/background.jpg" id="3_bd5a7"]
+[ext_resource type="Texture2D" uid="uid://yr6embwlyqtl" path="res://Art/Background.jpg" id="3_bd5a7"]
 [ext_resource type="PackedScene" uid="uid://dt7yykc77egu1" path="res://Player/Player.tscn" id="4_2wqtu"]
 [ext_resource type="Script" path="res://HP.gd" id="5_m4xkx"]
 [ext_resource type="PackedScene" uid="uid://cjxd6j8wmk40h" path="res://Fire.tscn" id="6_egbs3"]
@@ -409,7 +409,7 @@ texture = ExtResource("1_mu8hb")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_2iddw")
 
-[node name="Level1" type="Node2D"]
+[node name="Level2" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(0, 40)
