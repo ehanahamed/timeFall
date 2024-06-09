@@ -1,6 +1,9 @@
 extends Node2D
 
 func _ready():
+	if OS.has_feature("android") or OS.has_feature("web_android"):
+		Game.showTouchscreen = true
+
 	Utils.loadGame()
 	if Game.level == 0:
 		Game.level = 1

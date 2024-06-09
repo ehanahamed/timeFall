@@ -6,7 +6,7 @@ const SAVE_PATH = "res://savefile"
 func saveGame():
 	var file = FileAccess.open(SAVE_PATH, FileAccess.WRITE)
 	var jsondata: Dictionary = {
-		"level": Game.level,
+		"level": Game.level
 	}
 	var jsonstring = JSON.stringify(jsondata)
 	file.store_line(jsonstring)

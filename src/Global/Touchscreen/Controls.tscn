@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://bwm5ath1cap8n"]
+
+[ext_resource type="Texture2D" uid="uid://cjwh5ipg4q350" path="res://icon.svg" id="1_dsegt"]
+
+[node name="Controls" type="Node2D"]
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="."]
+texture_normal = ExtResource("1_dsegt")
+texture_pressed = ExtResource("1_dsegt")
