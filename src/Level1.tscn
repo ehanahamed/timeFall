@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://dcupum1w4vdtm"]
+[gd_scene load_steps=11 format=3 uid="uid://dcupum1w4vdtm"]
 
 [ext_resource type="Texture2D" uid="uid://kc08nfj5ea67" path="res://Art/NEWtileset.png" id="1_mu8hb"]
 [ext_resource type="Script" path="res://BG.gd" id="2_6xevx"]
@@ -7,7 +7,6 @@
 [ext_resource type="Script" path="res://HP.gd" id="5_m4xkx"]
 [ext_resource type="PackedScene" uid="uid://cjxd6j8wmk40h" path="res://Fire.tscn" id="6_egbs3"]
 [ext_resource type="Texture2D" uid="uid://dbxq04k0pv411" path="res://Art/HelpfulSign.png" id="7_6u7u6"]
-[ext_resource type="FontFile" uid="uid://cnodyc1q2wul5" path="res://Art/GohuFont14NerdFontPropo-Regular.ttf" id="8_nll8e"]
 [ext_resource type="PackedScene" uid="uid://5j87qnjpg0vr" path="res://Flag.tscn" id="9_k4oss"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2iddw"]
@@ -473,11 +472,11 @@ offset_top = -172.5
 offset_right = 141.0
 offset_bottom = -39.5
 size_flags_horizontal = 8
-theme_override_fonts/font = ExtResource("8_nll8e")
-theme_override_font_sizes/font_size = 36
-text = "Use WAD or
-arrow keys
-to move"
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+text = "Use WASD or
+ to
+move"
 horizontal_alignment = 1
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
@@ -489,14 +488,15 @@ texture = ExtResource("7_6u7u6")
 
 [node name="SignWords" type="Label" parent="HelpfulSign2"]
 offset_left = -137.0
-offset_top = -172.5
+offset_top = -172.0
 offset_right = 141.0
-offset_bottom = -39.5
+offset_bottom = -29.0
 size_flags_horizontal = 8
-theme_override_fonts/font = ExtResource("8_nll8e")
-theme_override_font_sizes/font_size = 36
-text = "Fire is bad!
-Jump over it"
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+text = "Use W, , 󰸸,
+or Spacebar
+to Jump"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -511,10 +511,11 @@ offset_top = -172.5
 offset_right = 141.0
 offset_bottom = -39.5
 size_flags_horizontal = 8
-theme_override_fonts/font = ExtResource("8_nll8e")
-theme_override_font_sizes/font_size = 36
-text = "Get to the
-flag to win!"
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+text = "Get to the flag
+to go to the
+next level!"
 horizontal_alignment = 1
 vertical_alignment = 1
 
