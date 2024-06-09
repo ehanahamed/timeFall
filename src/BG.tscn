@@ -11,15 +11,20 @@ script = ExtResource("1_gnenv")
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="."]
 motion_scale = Vector2(0.8, 0.8)
-motion_mirroring = Vector2(1150, 0)
+motion_mirroring = Vector2(2302, 0)
 
 [node name="Background" type="Sprite2D" parent="ParallaxLayer"]
 position = Vector2(576.25, 324)
 scale = Vector2(1.90331, 1.8)
 texture = ExtResource("2_54dbg")
 
+[node name="Background2" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(1727.75, 324)
+scale = Vector2(1.90331, 1.8)
+texture = ExtResource("2_54dbg")
+
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="."]
-motion_mirroring = Vector2(1200, 0)
+motion_mirroring = Vector2(1950, 0)
 
 [node name="Middleground-Building1" type="Sprite2D" parent="ParallaxLayer2"]
 position = Vector2(50, 518)
@@ -34,25 +39,45 @@ position = Vector2(337, 518)
 texture = ExtResource("4_xmymg")
 
 [node name="Middleground-Building4" type="Sprite2D" parent="ParallaxLayer2"]
-position = Vector2(450, 518)
-texture = ExtResource("2_dbuew")
+position = Vector2(475, 518)
+texture = ExtResource("3_6uqvh")
 
 [node name="Middleground-Building5" type="Sprite2D" parent="ParallaxLayer2"]
 position = Vector2(595, 518)
-texture = ExtResource("3_6uqvh")
+texture = ExtResource("2_dbuew")
 
 [node name="Middleground-Building6" type="Sprite2D" parent="ParallaxLayer2"]
-position = Vector2(737, 518)
+position = Vector2(750, 518)
 texture = ExtResource("4_xmymg")
 
 [node name="Middleground-Building7" type="Sprite2D" parent="ParallaxLayer2"]
-position = Vector2(850, 518)
-texture = ExtResource("2_dbuew")
+position = Vector2(895, 518)
+texture = ExtResource("4_xmymg")
 
 [node name="Middleground-Building8" type="Sprite2D" parent="ParallaxLayer2"]
-position = Vector2(995, 518)
+position = Vector2(1040, 518)
 texture = ExtResource("3_6uqvh")
 
 [node name="Middleground-Building9" type="Sprite2D" parent="ParallaxLayer2"]
-position = Vector2(1137, 518)
+position = Vector2(1170, 518)
+texture = ExtResource("2_dbuew")
+
+[node name="Middleground-Building10" type="Sprite2D" parent="ParallaxLayer2"]
+position = Vector2(1325, 518)
 texture = ExtResource("4_xmymg")
+
+[node name="Middleground-Building11" type="Sprite2D" parent="ParallaxLayer2"]
+position = Vector2(1465, 518)
+texture = ExtResource("3_6uqvh")
+
+[node name="Middleground-Building12" type="Sprite2D" parent="ParallaxLayer2"]
+position = Vector2(1585, 518)
+texture = ExtResource("2_dbuew")
+
+[node name="Middleground-Building13" type="Sprite2D" parent="ParallaxLayer2"]
+position = Vector2(1735, 518)
+texture = ExtResource("3_6uqvh")
+
+[node name="Middleground-Building14" type="Sprite2D" parent="ParallaxLayer2"]
+position = Vector2(1880, 518)
+texture = ExtResource("3_6uqvh")
