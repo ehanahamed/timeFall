@@ -471,7 +471,9 @@ offset_bottom = -42.5
 size_flags_horizontal = 8
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-text = "Sometimes,"
+text = "Sometimes,
+objects can
+block the path"
 horizontal_alignment = 1
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
