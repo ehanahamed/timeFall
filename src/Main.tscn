@@ -10,17 +10,17 @@ script = ExtResource("1_g3qpp")
 
 [node name="Play" type="Button" parent="."]
 offset_left = 360.0
-offset_top = 212.0
+offset_top = 240.0
 offset_right = 760.0
-offset_bottom = 312.0
+offset_bottom = 340.0
 theme_override_font_sizes/font_size = 32
 text = "Play"
 
 [node name="Quit" type="Button" parent="."]
 offset_left = 360.0
-offset_top = 369.0
+offset_top = 360.0
 offset_right = 760.0
-offset_bottom = 469.0
+offset_bottom = 460.0
 theme_override_font_sizes/font_size = 32
 text = "Quit"
 
@@ -37,12 +37,21 @@ autoplay = true
 bus = &"Music"
 
 [node name="Names" type="Label" parent="."]
-offset_left = 20.0
-offset_top = 580.0
-offset_right = 683.0
-offset_bottom = 618.0
-theme_override_font_sizes/font_size = 24
+offset_left = 326.0
+offset_top = 160.0
+offset_right = 794.0
+offset_bottom = 187.0
+theme_override_font_sizes/font_size = 20
 text = "Ehan Ahamed, Evan Albaz, & Mason Safran"
+
+[node name="Links" type="Label" parent="."]
+offset_left = 25.0
+offset_top = 565.0
+offset_right = 436.0
+offset_bottom = 612.0
+theme_override_font_sizes/font_size = 14
+text = "https://ehan.dev/timefall
+https://github.com/ehanahamed/timefall"
 
 [connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]

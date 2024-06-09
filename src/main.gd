@@ -14,5 +14,6 @@ func _on_play_pressed():
 
 func _process(delta):
 	get_node("Logo").position.x = (get_viewport().get_visible_rect().size.x / 2)
+	get_node("Names").position.x = ((get_viewport().get_visible_rect().size.x / 2) - 234)
 	get_node("Play").position.x = ((get_viewport().get_visible_rect().size.x / 2) - 200)
 	get_node("Quit").position.x = ((get_viewport().get_visible_rect().size.x / 2) - 200)
