@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bd2m303t740wd"
-path="res://.godot/imported/Middleground - Building2.png-7aa994c6da0b4f316e27e533d00c90ce.ctex"
+uid="uid://p67pomu18pnk"
+path="res://.godot/imported/Middleground-Building3.png-5134d06b51b4f031d71f1d91ef9380c7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Middleground - Building2.png"
-dest_files=["res://.godot/imported/Middleground - Building2.png-7aa994c6da0b4f316e27e533d00c90ce.ctex"]
+source_file="res://Art/Middleground-Building3.png"
+dest_files=["res://.godot/imported/Middleground-Building3.png-5134d06b51b4f031d71f1d91ef9380c7.ctex"]
 
 [params]
 

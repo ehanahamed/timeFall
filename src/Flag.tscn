@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://5j87qnjpg0vr"]
 
 [ext_resource type="Script" path="res://Flag.gd" id="1_rqmnb"]
-[ext_resource type="Texture2D" uid="uid://bthlyf55u48ng" path="res://Art/red-flag-with-pole-in-pixel-art-style-vector-removebg-preview.png" id="1_swcav"]
+[ext_resource type="Texture2D" uid="uid://bthlyf55u48ng" path="res://Art/flag.png" id="1_swcav"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h3t20"]
 size = Vector2(28, 2.5)

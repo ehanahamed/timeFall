@@ -1,10 +1,10 @@
 [gd_scene load_steps=6 format=3 uid="uid://0j5ds34bxb7c"]
 
 [ext_resource type="Script" path="res://BG.gd" id="1_gnenv"]
-[ext_resource type="Texture2D" uid="uid://yr6embwlyqtl" path="res://Art/background.jpg" id="2_54dbg"]
-[ext_resource type="Texture2D" uid="uid://3wbj2nxt3mqa" path="res://Art/Middleground - Building1.png" id="2_dbuew"]
-[ext_resource type="Texture2D" uid="uid://bd2m303t740wd" path="res://Art/Middleground - Building2.png" id="3_6uqvh"]
-[ext_resource type="Texture2D" uid="uid://p67pomu18pnk" path="res://Art/Middleground - Building3.png" id="4_xmymg"]
+[ext_resource type="Texture2D" uid="uid://yr6embwlyqtl" path="res://Art/bg.jpg" id="2_54dbg"]
+[ext_resource type="Texture2D" uid="uid://3wbj2nxt3mqa" path="res://Art/Middleground-Building1.png" id="2_dbuew"]
+[ext_resource type="Texture2D" uid="uid://bd2m303t740wd" path="res://Art/Middleground-Building2.png" id="3_6uqvh"]
+[ext_resource type="Texture2D" uid="uid://p67pomu18pnk" path="res://Art/Middleground-Building3.png" id="4_xmymg"]
 
 [node name="BG" type="ParallaxBackground"]
 script = ExtResource("1_gnenv")

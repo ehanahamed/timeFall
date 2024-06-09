@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://yr6embwlyqtl"
-path="res://.godot/imported/Background.jpg-8760665de4e86ccd91e4b6099a7ec564.ctex"
+uid="uid://3wbj2nxt3mqa"
+path="res://.godot/imported/Middleground-Building1.png-0dabc36ede2c79e70db723ab151c30c9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Background.jpg"
-dest_files=["res://.godot/imported/Background.jpg-8760665de4e86ccd91e4b6099a7ec564.ctex"]
+source_file="res://Art/Middleground-Building1.png"
+dest_files=["res://.godot/imported/Middleground-Building1.png-0dabc36ede2c79e70db723ab151c30c9.ctex"]
 
 [params]
 
