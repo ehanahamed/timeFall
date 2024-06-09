@@ -80,6 +80,5 @@ func _physics_process(delta):
 		get_node("/root/Controls").queue_free()
 		get_tree().change_scene_to_file("res://Main.tscn")
 
-
 func _on_level_ready():
 	Game.travelPlayer()
