@@ -532,3 +532,5 @@ scale = Vector2(2, 2)
 [node name="GameBGMusic" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("9_nw015")
 autoplay = true
+
+[connection signal="ready" from="." to="Player/Player" method="_on_level_ready"]

@@ -489,3 +489,5 @@ metadata/_edit_use_anchors_ = true
 [node name="Flag" parent="." instance=ExtResource("8_dja7f")]
 position = Vector2(1051, 372)
 scale = Vector2(2, 2)
+
+[connection signal="ready" from="." to="Player/Player" method="_on_level_ready"]
