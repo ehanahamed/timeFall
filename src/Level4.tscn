@@ -16,6 +16,23 @@ size = Vector2(805, 168.5)
 
 [node name="Level" type="Node2D"]
 
+[node name="bgTiles" type="Node2D" parent="."]
+
+[node name="bgTileMap" type="TileMap" parent="bgTiles"]
+position = Vector2(0, 40)
+tile_set = ExtResource("1_gotp7")
+format = 2
+layer_0/tile_data = PackedInt32Array(2031651, 65536, 18, 1966115, 65536, 17, 1900580, 131072, 16, 1966116, 131072, 17, 2031652, 131072, 18, 2031653, 589824, 21, 1966117, 589824, 20, 1835045, 131072, 18, 1900581, 131072, 18, 1769509, 131072, 17, 1769510, 131072, 18, 1966118, 655360, 20, 2031654, 655360, 21, 1966119, 720896, 20, 2031655, 720896, 21, 1966120, 327680, 18, 2031656, 327680, 18, 1769511, 262144, 15, 1835047, 262144, 16, 1900583, 262144, 17, 1769512, 327680, 15, 1900584, 327680, 17, 1835044, 131072, 16, 1769508, 65536, 17, 1835046, 131072, 18, 1900582, 131072, 18)
+
+[node name="overlay" type="Sprite2D" parent="bgTiles"]
+texture = ExtResource("4_w5jal")
+centered = false
+
+[node name="overlay2" type="Sprite2D" parent="bgTiles"]
+position = Vector2(1120, 0)
+texture = ExtResource("4_w5jal")
+centered = false
+
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(0, 40)
 tile_set = ExtResource("1_gotp7")
@@ -33,15 +50,6 @@ motion_mirroring = Vector2(1151.5, 0)
 position = Vector2(576.25, 324)
 scale = Vector2(1.90331, 1.8)
 texture = ExtResource("3_dytpe")
-
-[node name="overlay" type="Sprite2D" parent="BG"]
-texture = ExtResource("4_w5jal")
-centered = false
-
-[node name="overlay2" type="Sprite2D" parent="BG"]
-position = Vector2(1120, 0)
-texture = ExtResource("4_w5jal")
-centered = false
 
 [node name="Player" type="Node2D" parent="."]
 

@@ -12,6 +12,23 @@
 
 [node name="Level" type="Node2D"]
 
+[node name="bgTiles" type="Node2D" parent="."]
+
+[node name="bgTileMap" type="TileMap" parent="bgTiles"]
+position = Vector2(0, 40)
+tile_set = ExtResource("1_qeewk")
+format = 2
+layer_0/tile_data = PackedInt32Array(2097176, 65536, 18, 2097177, 131072, 18, 2031640, 65536, 17, 2031641, 131072, 17, 1966105, 131072, 16, 1900569, 131072, 16, 1835033, 65536, 17, 2097168, 65536, 7, 2097169, 65536, 7, 2097170, 65536, 7, 2097171, 65536, 7, 2097172, 65536, 7, 2097173, 65536, 7, 2097174, 65536, 7, 2097175, 65536, 7, 1835064, 65536, 7, 1835065, 65536, 7, 1835066, 65536, 7, 1835067, 65536, 7, 1835068, 65536, 7)
+
+[node name="overlay" type="Sprite2D" parent="bgTiles"]
+texture = ExtResource("4_82n6f")
+centered = false
+
+[node name="overlay2" type="Sprite2D" parent="bgTiles"]
+position = Vector2(1120, 0)
+texture = ExtResource("4_82n6f")
+centered = false
+
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(0, 40)
 tile_set = ExtResource("1_qeewk")

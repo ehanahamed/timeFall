@@ -68,13 +68,14 @@ func _physics_process(delta):
 		if Game.level >= 3:
 			Game.travelX = position.x
 			Game.travelY = position.y
+			get_tree().root.get_node("Controls").queue_free()
 			Game.travelScene()
 			
 	move_and_slide()
 	
 	if Game.health  <= 0:
 		queue_free()
-		get_node("/root/Controls").queue_free()
+		get_tree().root.get_node("Controls").queue_free()
 		get_tree().change_scene_to_file("res://Main.tscn")
 		Engine.time_scale = 1
 
