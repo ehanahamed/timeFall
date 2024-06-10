@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://curkww2l16cne"]
+[gd_scene load_steps=13 format=3 uid="uid://curkww2l16cne"]
 
 [ext_resource type="Texture2D" uid="uid://kc08nfj5ea67" path="res://Art/NEWtileset.png" id="1_yyv01"]
 [ext_resource type="Script" path="res://BG.gd" id="2_2wtt5"]
@@ -7,8 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://dt7yykc77egu1" path="res://Player/Player.tscn" id="5_46jvo"]
 [ext_resource type="Script" path="res://HP.gd" id="6_p5q4m"]
 [ext_resource type="Texture2D" uid="uid://dbxq04k0pv411" path="res://Art/HelpfulSign.png" id="7_dqrhk"]
-[ext_resource type="PackedScene" uid="uid://5j87qnjpg0vr" path="res://Flag.tscn" id="8_n7gal"]
-[ext_resource type="AudioStream" uid="uid://dpspsbacrkapk" path="res://Audio/gameLevel.mp3" id="9_rnulb"]
+[ext_resource type="AudioStream" uid="uid://dm2oi86es4utk" path="res://Audio/gameLevelAlt.mp3" id="8_0hex3"]
 [ext_resource type="Script" path="res://Edge.gd" id="10_fxcqm"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2iddw"]
@@ -496,12 +495,8 @@ horizontal_alignment = 1
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="Flag" parent="." instance=ExtResource("8_n7gal")]
-position = Vector2(1051, 372)
-scale = Vector2(2, 2)
-
 [node name="GameBGMusic" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("9_rnulb")
+stream = ExtResource("8_0hex3")
 autoplay = true
 
 [node name="Edge" type="Area2D" parent="."]
