@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://b1seetwgdoivj"]
+[gd_scene load_steps=11 format=3 uid="uid://b1seetwgdoivj"]
 
 [ext_resource type="Texture2D" uid="uid://kc08nfj5ea67" path="res://Art/NEWtileset.png" id="1_eos3e"]
 [ext_resource type="Script" path="res://BG.gd" id="2_hf0lu"]
@@ -7,7 +7,6 @@
 [ext_resource type="Script" path="res://HP.gd" id="5_wbkqa"]
 [ext_resource type="PackedScene" uid="uid://cjxd6j8wmk40h" path="res://Fire.tscn" id="6_k61ij"]
 [ext_resource type="Texture2D" uid="uid://dbxq04k0pv411" path="res://Art/HelpfulSign.png" id="7_cv8wa"]
-[ext_resource type="PackedScene" uid="uid://5j87qnjpg0vr" path="res://Flag.tscn" id="8_wuqfo"]
 [ext_resource type="AudioStream" uid="uid://dm2oi86es4utk" path="res://Audio/gameLevelAlt.mp3" id="9_c6x4r"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2iddw"]
@@ -454,7 +453,7 @@ script = ExtResource("5_wbkqa")
 position = Vector2(824, 568)
 
 [node name="HelpfulSign1" type="Sprite2D" parent="."]
-position = Vector2(190, 401)
+position = Vector2(590, 417)
 scale = Vector2(0.549, 0.4)
 texture = ExtResource("7_cv8wa")
 
@@ -471,16 +470,37 @@ offset_bottom = -42.5
 size_flags_horizontal = 8
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-text = "Sometimes,
-objects can
-block the path"
+text = "Now you can
+get to where
+the flag was"
 horizontal_alignment = 1
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="Flag" parent="." instance=ExtResource("8_wuqfo")]
-position = Vector2(1051, 372)
-scale = Vector2(2, 2)
+[node name="HelpfulSign2" type="Sprite2D" parent="."]
+position = Vector2(942, 353)
+scale = Vector2(0.549, 0.4)
+texture = ExtResource("7_cv8wa")
+
+[node name="SignWords" type="Label" parent="HelpfulSign2"]
+anchors_preset = -1
+anchor_left = -0.232134
+anchor_top = 0.001
+anchor_right = -0.232134
+anchor_bottom = 0.005
+offset_left = -16.9021
+offset_top = -175.5
+offset_right = 261.098
+offset_bottom = -42.5
+size_flags_horizontal = 8
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+text = "Time travel
+again to get
+to the flag"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="GameBGMusic" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("9_c6x4r")
