@@ -49,9 +49,7 @@ func _physics_process(delta):
 		else:
 			velocity.x = move_toward(velocity.x, 0, SPEED)
 			anim.play("Idle")
-		
-	if Input.is_action_just_pressed("time_normal"):
-		Engine.time_scale = 1
+
 	if Input.is_action_just_pressed("time_freeze"):
 		if Game.level >= 4:
 			if Engine.time_scale != 0 and canTimeFreeze:
@@ -66,11 +64,6 @@ func _physics_process(delta):
 				Engine.time_scale = 1
 			else:
 				Engine.time_scale = 0.5
-	if Input.is_action_just_pressed("time_fast"):
-		if Engine.time_scale == 2:
-			Engine.time_scale = 1
-		else:
-			Engine.time_scale = 2
 	if Input.is_action_just_pressed("time_travel"):
 		if Game.level >= 3:
 			Game.travelX = position.x
