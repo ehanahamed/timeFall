@@ -1,9 +1,10 @@
-[gd_scene load_steps=11 format=3 uid="uid://goadgfe8lqh8"]
+[gd_scene load_steps=12 format=3 uid="uid://goadgfe8lqh8"]
 
 [ext_resource type="Texture2D" uid="uid://kc08nfj5ea67" path="res://Art/NEWtileset.png" id="1_h2m0f"]
 [ext_resource type="Script" path="res://BG.gd" id="2_1hr4e"]
 [ext_resource type="Texture2D" uid="uid://yr6embwlyqtl" path="res://Art/bg.jpg" id="3_p17ww"]
 [ext_resource type="PackedScene" uid="uid://dt7yykc77egu1" path="res://Player/Player.tscn" id="4_bi723"]
+[ext_resource type="Texture2D" uid="uid://b74ponip6pats" path="res://Art/overlay.png" id="4_mkt5u"]
 [ext_resource type="Script" path="res://HP.gd" id="5_wcnfu"]
 [ext_resource type="PackedScene" uid="uid://cjxd6j8wmk40h" path="res://Fire.tscn" id="6_h31i0"]
 [ext_resource type="Texture2D" uid="uid://dbxq04k0pv411" path="res://Art/HelpfulSign.png" id="7_p3he8"]
@@ -428,6 +429,15 @@ motion_mirroring = Vector2(1151.5, 0)
 position = Vector2(576.25, 324)
 scale = Vector2(1.90331, 1.8)
 texture = ExtResource("3_p17ww")
+
+[node name="overlay" type="Sprite2D" parent="BG"]
+texture = ExtResource("4_mkt5u")
+centered = false
+
+[node name="overlay2" type="Sprite2D" parent="BG"]
+position = Vector2(1120, 0)
+texture = ExtResource("4_mkt5u")
+centered = false
 
 [node name="Player" type="Node2D" parent="."]
 

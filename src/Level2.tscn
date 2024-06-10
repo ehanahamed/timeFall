@@ -1,8 +1,9 @@
-[gd_scene load_steps=12 format=3 uid="uid://dvabbvoy2v1s3"]
+[gd_scene load_steps=13 format=3 uid="uid://dvabbvoy2v1s3"]
 
 [ext_resource type="Texture2D" uid="uid://kc08nfj5ea67" path="res://Art/NEWtileset.png" id="1_uxb76"]
 [ext_resource type="Script" path="res://BG.gd" id="2_qw15s"]
 [ext_resource type="Texture2D" uid="uid://yr6embwlyqtl" path="res://Art/bg.jpg" id="3_temyv"]
+[ext_resource type="Texture2D" uid="uid://b74ponip6pats" path="res://Art/overlay.png" id="4_gkogw"]
 [ext_resource type="PackedScene" uid="uid://dt7yykc77egu1" path="res://Player/Player.tscn" id="4_qhfq7"]
 [ext_resource type="Script" path="res://HP.gd" id="5_metxg"]
 [ext_resource type="PackedScene" uid="uid://cjxd6j8wmk40h" path="res://Fire.tscn" id="6_x6d83"]
@@ -433,6 +434,15 @@ position = Vector2(576.25, 324)
 scale = Vector2(1.90331, 1.8)
 texture = ExtResource("3_temyv")
 
+[node name="overlay" type="Sprite2D" parent="BG"]
+texture = ExtResource("4_gkogw")
+centered = false
+
+[node name="overlay2" type="Sprite2D" parent="BG"]
+position = Vector2(1120, 0)
+texture = ExtResource("4_gkogw")
+centered = false
+
 [node name="Player" type="Node2D" parent="."]
 
 [node name="Player" parent="Player" instance=ExtResource("4_qhfq7")]
@@ -494,16 +504,16 @@ anchor_left = -0.232134
 anchor_top = 0.001
 anchor_right = -0.232134
 anchor_bottom = 0.005
-offset_left = -38.76
-offset_top = -175.5
-offset_right = 265.24
-offset_bottom = -42.5
+offset_left = -33.2955
+offset_top = -183.0
+offset_right = 270.704
+offset_bottom = -50.0
 size_flags_horizontal = 8
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 32
+theme_override_font_sizes/font_size = 30
 text = "Some jumps
-can't be made
-in normal speed"
+cant be made
+at normal speed"
 horizontal_alignment = 1
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
