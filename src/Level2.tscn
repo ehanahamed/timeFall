@@ -1,6 +1,6 @@
 [gd_scene load_steps=13 format=3 uid="uid://dvabbvoy2v1s3"]
 
-[ext_resource type="TileSet" uid="uid://0200lji0a2kc" path="res://tileset.tres" id="1_8lulq"]
+[ext_resource type="TileSet" uid="uid://bwr3yuvicnmea" path="res://tileset.tres" id="1_8lulq"]
 [ext_resource type="Script" path="res://BG.gd" id="2_qw15s"]
 [ext_resource type="Texture2D" uid="uid://yr6embwlyqtl" path="res://Art/bg.jpg" id="3_temyv"]
 [ext_resource type="Texture2D" uid="uid://b74ponip6pats" path="res://Art/overlay.png" id="4_gkogw"]
@@ -15,7 +15,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mcw17"]
 size = Vector2(330, 790)
 
-[node name="Level" type="Node2D"]
+[node name="Level2" type="Node2D"]
 
 [node name="bgTiles" type="Node2D" parent="."]
 

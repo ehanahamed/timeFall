@@ -1,6 +1,6 @@
 [gd_scene load_steps=11 format=3 uid="uid://dcupum1w4vdtm"]
 
-[ext_resource type="TileSet" uid="uid://0200lji0a2kc" path="res://tileset.tres" id="1_v5jl2"]
+[ext_resource type="TileSet" uid="uid://bwr3yuvicnmea" path="res://tileset.tres" id="1_v5jl2"]
 [ext_resource type="Script" path="res://BG.gd" id="2_6xevx"]
 [ext_resource type="Texture2D" uid="uid://yr6embwlyqtl" path="res://Art/bg.jpg" id="3_bd5a7"]
 [ext_resource type="PackedScene" uid="uid://dt7yykc77egu1" path="res://Player/Player.tscn" id="4_2wqtu"]
@@ -11,7 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://5j87qnjpg0vr" path="res://Flag.tscn" id="9_k4oss"]
 [ext_resource type="AudioStream" uid="uid://dpspsbacrkapk" path="res://Audio/gameLevel.mp3" id="9_nw015"]
 
-[node name="Level" type="Node2D"]
+[node name="Level2" type="Node2D"]
 
 [node name="bgTiles" type="Node2D" parent="."]
 

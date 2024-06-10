@@ -1,6 +1,6 @@
-[gd_scene load_steps=11 format=3 uid="uid://ltkr82kch3h3"]
+[gd_scene load_steps=11 format=3 uid="uid://b5chd1shrj0a7"]
 
-[ext_resource type="TileSet" uid="uid://0200lji0a2kc" path="res://tileset.tres" id="1_eqbob"]
+[ext_resource type="TileSet" uid="uid://bwr3yuvicnmea" path="res://tileset.tres" id="1_eqbob"]
 [ext_resource type="Script" path="res://BG.gd" id="2_3ukal"]
 [ext_resource type="Texture2D" uid="uid://yr6embwlyqtl" path="res://Art/bg.jpg" id="3_qciix"]
 [ext_resource type="Texture2D" uid="uid://b74ponip6pats" path="res://Art/overlay.png" id="4_5ykhc"]

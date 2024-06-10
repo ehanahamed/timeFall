@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=3 uid="uid://b1seetwgdoivj"]
 
-[ext_resource type="TileSet" uid="uid://0200lji0a2kc" path="res://tileset.tres" id="1_bmxow"]
+[ext_resource type="TileSet" uid="uid://bwr3yuvicnmea" path="res://tileset.tres" id="1_bmxow"]
 [ext_resource type="Script" path="res://BG.gd" id="2_hf0lu"]
 [ext_resource type="Texture2D" uid="uid://cqo267m8eb3ov" path="res://Art/bgAlt.jpg" id="3_wfi1h"]
 [ext_resource type="PackedScene" uid="uid://dt7yykc77egu1" path="res://Player/Player.tscn" id="4_8e4gv"]
@@ -10,7 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://dbxq04k0pv411" path="res://Art/HelpfulSign.png" id="7_cv8wa"]
 [ext_resource type="AudioStream" uid="uid://dm2oi86es4utk" path="res://Audio/gameLevelAlt.mp3" id="9_c6x4r"]
 
-[node name="Level" type="Node2D"]
+[node name="Level2" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(0, 40)
@@ -61,6 +61,15 @@ script = ExtResource("5_wbkqa")
 
 [node name="Fire4" parent="." instance=ExtResource("6_k61ij")]
 position = Vector2(824, 568)
+
+[node name="Fire5" parent="." instance=ExtResource("6_k61ij")]
+position = Vector2(441, 568)
+
+[node name="Fire6" parent="." instance=ExtResource("6_k61ij")]
+position = Vector2(481, 568)
+
+[node name="Fire7" parent="." instance=ExtResource("6_k61ij")]
+position = Vector2(521, 568)
 
 [node name="HelpfulSign1" type="Sprite2D" parent="."]
 position = Vector2(590, 417)
