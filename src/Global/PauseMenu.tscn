@@ -18,20 +18,30 @@ position = Vector2(1120, 0)
 texture = ExtResource("1_yiyca")
 centered = false
 
-[node name="Label" type="Label" parent="CanvasLayer"]
-offset_left = 304.0
-offset_top = 160.0
-offset_right = 817.0
-offset_bottom = 203.0
-theme_override_font_sizes/font_size = 32
-text = "pause menu placeholder text"
-
 [node name="Unpause" type="Button" parent="CanvasLayer"]
 offset_left = 360.0
-offset_top = 240.0
+offset_top = 140.0
 offset_right = 760.0
-offset_bottom = 340.0
+offset_bottom = 240.0
 theme_override_font_sizes/font_size = 32
 text = "Resume"
 
+[node name="Reset" type="Button" parent="CanvasLayer"]
+offset_left = 360.0
+offset_top = 280.0
+offset_right = 760.0
+offset_bottom = 380.0
+theme_override_font_sizes/font_size = 32
+text = "Restart Level"
+
+[node name="Exit" type="Button" parent="CanvasLayer"]
+offset_left = 360.0
+offset_top = 420.0
+offset_right = 760.0
+offset_bottom = 520.0
+theme_override_font_sizes/font_size = 32
+text = "Exit to Main Menu"
+
 [connection signal="pressed" from="CanvasLayer/Unpause" to="." method="_on_unpause_pressed"]
+[connection signal="pressed" from="CanvasLayer/Reset" to="." method="_on_reset_pressed"]
+[connection signal="pressed" from="CanvasLayer/Exit" to="." method="_on_exit_pressed"]
