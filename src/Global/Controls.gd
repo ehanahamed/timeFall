@@ -12,3 +12,8 @@ func _process(delta):
 	get_node("Freeze").position.x = (get_viewport().get_visible_rect().size.x - 240)
 	get_node("Timetravel").position.x = (get_viewport().get_visible_rect().size.x - 120)
 	get_node("Slow").position.x = (get_viewport().get_visible_rect().size.x - 240)
+	get_node("Pause").position.x = (get_viewport().get_visible_rect().size.x - 80)
+
+
+func _on_pause_button_up():
+	Game.pause()

@@ -1,0 +1,37 @@
+[gd_scene load_steps=3 format=3 uid="uid://cehyg5aqn15gd"]
+
+[ext_resource type="Script" path="res://Global/PauseMenu.gd" id="1_rivaq"]
+[ext_resource type="Texture2D" uid="uid://b74ponip6pats" path="res://Art/overlay.png" id="1_yiyca"]
+
+[node name="PauseMenu" type="Node2D"]
+script = ExtResource("1_rivaq")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 4
+
+[node name="overlay" type="Sprite2D" parent="CanvasLayer"]
+texture = ExtResource("1_yiyca")
+centered = false
+
+[node name="overlay2" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(1120, 0)
+texture = ExtResource("1_yiyca")
+centered = false
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+offset_left = 304.0
+offset_top = 160.0
+offset_right = 817.0
+offset_bottom = 203.0
+theme_override_font_sizes/font_size = 32
+text = "pause menu placeholder text"
+
+[node name="Unpause" type="Button" parent="CanvasLayer"]
+offset_left = 360.0
+offset_top = 240.0
+offset_right = 760.0
+offset_bottom = 340.0
+theme_override_font_sizes/font_size = 32
+text = "Resume"
+
+[connection signal="pressed" from="CanvasLayer/Unpause" to="." method="_on_unpause_pressed"]

@@ -55,7 +55,7 @@ func _physics_process(delta):
 			if Engine.time_scale != 0 and canTimeFreeze:
 				Engine.time_scale = 0
 				canExtraJump = true
-			elif Engine.time_scale == 0:
+			elif Engine.time_scale == 0 and (Game.paused == false):
 				Engine.time_scale = 1
 				canTimeFreeze = false
 	if Input.is_action_just_pressed("time_slow"):

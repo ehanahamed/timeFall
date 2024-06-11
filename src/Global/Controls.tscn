@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://bwm5ath1cap8n"]
+[gd_scene load_steps=16 format=3 uid="uid://bwm5ath1cap8n"]
 
 [ext_resource type="Texture2D" uid="uid://8toen6gdnirj" path="res://Art/left.png" id="1_ckduh"]
 [ext_resource type="Script" path="res://Global/Controls.gd" id="1_qjoq0"]
@@ -13,6 +13,8 @@
 [ext_resource type="Texture2D" uid="uid://d0w365royovcq" path="res://Art/slowAlt.png" id="10_0osny"]
 [ext_resource type="Texture2D" uid="uid://it5xna40eu5a" path="res://Art/timetravel.png" id="11_sc0ga"]
 [ext_resource type="Texture2D" uid="uid://djkks623b35au" path="res://Art/timetravelAlt.png" id="12_26yfh"]
+[ext_resource type="Texture2D" uid="uid://bfb5s1kl8cb1b" path="res://Art/pause.png" id="14_wswwg"]
+[ext_resource type="Texture2D" uid="uid://chn1y0ygeg2wi" path="res://Art/pauseAlt.png" id="15_0acjb"]
 
 [node name="Controls" type="Node2D"]
 script = ExtResource("1_qjoq0")
@@ -70,3 +72,15 @@ texture_normal = ExtResource("11_sc0ga")
 texture_pressed = ExtResource("12_26yfh")
 action = "time_travel"
 visibility_mode = 1
+
+[node name="Pause" type="TextureButton" parent="."]
+offset_left = 1040.0
+offset_top = 20.0
+offset_right = 1552.0
+offset_bottom = 532.0
+scale = Vector2(0.12, 0.12)
+texture_normal = ExtResource("14_wswwg")
+texture_pressed = ExtResource("15_0acjb")
+texture_hover = ExtResource("15_0acjb")
+
+[connection signal="button_up" from="Pause" to="." method="_on_pause_button_up"]
