@@ -127,31 +127,6 @@ horizontal_alignment = 1
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="HelpfulSign3" type="Sprite2D" parent="."]
-position = Vector2(790, 401)
-scale = Vector2(0.549, 0.4)
-texture = ExtResource("7_dlmtb")
-
-[node name="SignWords" type="Label" parent="HelpfulSign3"]
-anchors_preset = -1
-anchor_left = -0.232134
-anchor_top = 0.001
-anchor_right = -0.232134
-anchor_bottom = 0.005
-offset_left = -24.1882
-offset_top = -173.0
-offset_right = 253.812
-offset_bottom = -40.0
-size_flags_horizontal = 8
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 28
-text = "You will have to
-time travel to
-make some jumps"
-horizontal_alignment = 1
-vertical_alignment = 1
-metadata/_edit_use_anchors_ = true
-
 [node name="Flag" parent="." instance=ExtResource("8_67v24")]
 position = Vector2(168, 180)
 scale = Vector2(2, 2)
