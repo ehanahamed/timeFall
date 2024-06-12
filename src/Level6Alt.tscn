@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://4et85ea060ms"]
+[gd_scene load_steps=11 format=3 uid="uid://4et85ea060ms"]
 
 [ext_resource type="TileSet" uid="uid://bwr3yuvicnmea" path="res://tileset.tres" id="1_w58ut"]
 [ext_resource type="Script" path="res://BG.gd" id="2_3cy05"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://dt7yykc77egu1" path="res://Player/Player.tscn" id="5_gg1c5"]
 [ext_resource type="Script" path="res://HP.gd" id="6_2071b"]
 [ext_resource type="AudioStream" uid="uid://dm2oi86es4utk" path="res://Audio/gameLevelAlt.mp3" id="8_42te7"]
+[ext_resource type="PackedScene" uid="uid://bwm5ath1cap8n" path="res://Global/Controls.tscn" id="9_adbrj"]
 [ext_resource type="Script" path="res://Edge.gd" id="9_f241c"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lsbn7"]
@@ -80,6 +81,8 @@ script = ExtResource("9_f241c")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Edge2"]
 position = Vector2(568, -873)
 shape = SubResource("RectangleShape2D_lsbn7")
+
+[node name="Controls" parent="." instance=ExtResource("9_adbrj")]
 
 [connection signal="ready" from="." to="Player/Player" method="_on_level_ready"]
 [connection signal="body_entered" from="Edge" to="Edge" method="_on_body_entered"]

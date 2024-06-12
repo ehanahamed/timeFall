@@ -12,10 +12,6 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var canTimeFreeze = true
 var canExtraJump = false
 
-func _ready():
-	var onscreenControls = load("res://Global/Controls.tscn")
-	get_node("/root").add_child(onscreenControls.instantiate())
-	
 func _physics_process(delta):
 	# Add the gravity.
 	if not is_on_floor():
@@ -70,7 +66,6 @@ func _physics_process(delta):
 			Game.travelX = position.x
 			Game.travelY = position.y
 			Game.canTravel = false
-			get_tree().root.get_node("Controls").queue_free()
 			Game.travelScene()
 			
 	move_and_slide()
@@ -80,7 +75,6 @@ func _physics_process(delta):
 	
 	if Game.health  <= 0:
 		queue_free()
-		get_tree().root.get_node("Controls").queue_free()
 		get_tree().change_scene_to_file("res://Main.tscn")
 		Engine.time_scale = 1
 

@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://dcupum1w4vdtm"]
+[gd_scene load_steps=12 format=3 uid="uid://dcupum1w4vdtm"]
 
 [ext_resource type="TileSet" uid="uid://bwr3yuvicnmea" path="res://tileset.tres" id="1_v5jl2"]
 [ext_resource type="Script" path="res://BG.gd" id="2_6xevx"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://dbxq04k0pv411" path="res://Art/HelpfulSign.png" id="7_6u7u6"]
 [ext_resource type="PackedScene" uid="uid://5j87qnjpg0vr" path="res://Flag.tscn" id="9_k4oss"]
 [ext_resource type="AudioStream" uid="uid://dpspsbacrkapk" path="res://Audio/gameLevel.mp3" id="9_nw015"]
+[ext_resource type="PackedScene" uid="uid://bwm5ath1cap8n" path="res://Global/Controls.tscn" id="11_f5xrt"]
 
 [node name="Level" type="Node2D"]
 
@@ -150,5 +151,7 @@ scale = Vector2(2, 2)
 [node name="GameBGMusic" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("9_nw015")
 autoplay = true
+
+[node name="Controls" parent="." instance=ExtResource("11_f5xrt")]
 
 [connection signal="ready" from="." to="Player/Player" method="_on_level_ready"]

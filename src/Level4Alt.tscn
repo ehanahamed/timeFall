@@ -1,6 +1,6 @@
-[gd_scene load_steps=11 format=3 uid="uid://curkww2l16cne"]
+[gd_scene load_steps=12 format=3 uid="uid://curkww2l16cne"]
 
-[ext_resource type="TileSet" uid="uid://0200lji0a2kc" path="res://tileset.tres" id="1_1m2jp"]
+[ext_resource type="TileSet" uid="uid://bwr3yuvicnmea" path="res://tileset.tres" id="1_1m2jp"]
 [ext_resource type="Script" path="res://BG.gd" id="2_2wtt5"]
 [ext_resource type="Texture2D" uid="uid://cqo267m8eb3ov" path="res://Art/bgAlt.jpg" id="3_un62f"]
 [ext_resource type="Texture2D" uid="uid://b74ponip6pats" path="res://Art/overlay.png" id="4_3qxae"]
@@ -8,6 +8,7 @@
 [ext_resource type="Script" path="res://HP.gd" id="6_p5q4m"]
 [ext_resource type="Texture2D" uid="uid://dbxq04k0pv411" path="res://Art/HelpfulSign.png" id="7_dqrhk"]
 [ext_resource type="AudioStream" uid="uid://dm2oi86es4utk" path="res://Audio/gameLevelAlt.mp3" id="8_0hex3"]
+[ext_resource type="PackedScene" uid="uid://bwm5ath1cap8n" path="res://Global/Controls.tscn" id="10_fdtxq"]
 [ext_resource type="Script" path="res://Edge.gd" id="10_fxcqm"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lsbn7"]
@@ -106,6 +107,8 @@ script = ExtResource("10_fxcqm")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Edge2"]
 position = Vector2(362, -912.75)
 shape = SubResource("RectangleShape2D_lsbn7")
+
+[node name="Controls" parent="." instance=ExtResource("10_fdtxq")]
 
 [connection signal="ready" from="." to="Player/Player" method="_on_level_ready"]
 [connection signal="body_entered" from="Edge" to="Edge" method="_on_body_entered"]

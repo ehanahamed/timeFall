@@ -13,10 +13,8 @@ func _on_unpause_pressed():
 
 func _on_reset_pressed():
 	Game.unpause()
-	get_tree().root.get_node("Controls").queue_free()
 	get_tree().reload_current_scene()
 
 func _on_exit_pressed():
 	Game.unpause()
-	get_tree().root.get_node("Controls").queue_free()
 	get_tree().change_scene_to_file("res://Main.tscn")

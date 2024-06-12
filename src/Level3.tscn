@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://b5pisva722byw"]
+[gd_scene load_steps=12 format=3 uid="uid://b5pisva722byw"]
 
 [ext_resource type="TileSet" uid="uid://bwr3yuvicnmea" path="res://tileset.tres" id="1_qeewk"]
 [ext_resource type="Script" path="res://BG.gd" id="2_10dth"]
@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://5j87qnjpg0vr" path="res://Flag.tscn" id="8_67v24"]
 [ext_resource type="AudioStream" uid="uid://dpspsbacrkapk" path="res://Audio/gameLevel.mp3" id="9_6bj63"]
 [ext_resource type="PackedScene" uid="uid://cjxd6j8wmk40h" path="res://Fire.tscn" id="10_petlu"]
+[ext_resource type="PackedScene" uid="uid://bwm5ath1cap8n" path="res://Global/Controls.tscn" id="11_h4a7v"]
 
 [node name="Level" type="Node2D"]
 
@@ -137,5 +138,7 @@ autoplay = true
 
 [node name="Fire9" parent="." instance=ExtResource("10_petlu")]
 position = Vector2(824, 568)
+
+[node name="Controls" parent="." instance=ExtResource("11_h4a7v")]
 
 [connection signal="ready" from="." to="Player/Player" method="_on_level_ready"]
