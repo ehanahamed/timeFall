@@ -1,0 +1,49 @@
+[gd_scene load_steps=5 format=3 uid="uid://dvmjit6o8vopb"]
+
+[ext_resource type="Script" path="res://End.gd" id="1_eo16b"]
+[ext_resource type="PackedScene" uid="uid://0j5ds34bxb7c" path="res://BG.tscn" id="2_5tfh1"]
+[ext_resource type="Texture2D" uid="uid://br6druq6hkcox" path="res://Art/timeFallLogo.png" id="3_v30nl"]
+[ext_resource type="AudioStream" uid="uid://8yoqh5msgkyt" path="res://Audio/gameMenu.mp3" id="4_s4llf"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_eo16b")
+
+[node name="BG" parent="." instance=ExtResource("2_5tfh1")]
+
+[node name="Logo" type="Sprite2D" parent="."]
+position = Vector2(560, 100)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("3_v30nl")
+
+[node name="TitleMusic" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_s4llf")
+autoplay = true
+bus = &"Music"
+
+[node name="Names" type="Label" parent="."]
+offset_left = 326.0
+offset_top = 160.0
+offset_right = 738.0
+offset_bottom = 188.0
+theme_override_font_sizes/font_size = 20
+text = "Ehan Ahamed, Evan Albaz, & Mason Safran"
+
+[node name="Text" type="Label" parent="."]
+offset_left = 326.0
+offset_top = 260.0
+offset_right = 789.0
+offset_bottom = 381.0
+theme_override_font_sizes/font_size = 20
+text = "You've reached the end of the game and beaten
+all of the levels!
+
+Thank you for playing"
+
+[node name="Links" type="Label" parent="."]
+offset_left = 25.0
+offset_top = 565.0
+offset_right = 436.0
+offset_bottom = 612.0
+theme_override_font_sizes/font_size = 14
+text = "https://ehan.dev/timefall
+https://github.com/ehanahamed/timefall"

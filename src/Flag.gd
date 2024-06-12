@@ -13,10 +13,10 @@ func _process(delta):
 func _on_player_collision_body_entered(body):
 	if body.name == "Player":
 		Engine.time_scale = 1
-		if Game.level < 6:
+		if Game.level < 7:
 			Game.level += 1
 			Game.travel = false
 			get_tree().change_scene_to_file("res://Level" + str(Game.level) + ".tscn")
 		else:
 			Game.travel = false
-			get_tree().change_scene_to_file("res://Main.tscn")
+			get_tree().change_scene_to_file("res://End.tscn")

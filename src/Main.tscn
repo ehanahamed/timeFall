@@ -47,8 +47,8 @@ bus = &"Music"
 [node name="Names" type="Label" parent="."]
 offset_left = 326.0
 offset_top = 160.0
-offset_right = 794.0
-offset_bottom = 187.0
+offset_right = 738.0
+offset_bottom = 188.0
 theme_override_font_sizes/font_size = 20
 text = "Ehan Ahamed, Evan Albaz, & Mason Safran"
 
