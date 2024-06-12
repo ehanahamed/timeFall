@@ -10,3 +10,4 @@ Time Fall is a 2D pixel-art platformer with time-control. The player can freeze 
 ![screenshot1](https://raw.githubusercontent.com/ehanahamed/timefall/v1.0.0/art/screenshots/Screenshot_20240610_064548.png)
 ![screenshot2](https://raw.githubusercontent.com/ehanahamed/timefall/v1.0.0/art/screenshots/Screenshot_20240610_064620.png)
 ![screenshot3](https://raw.githubusercontent.com/ehanahamed/timefall/v1.0.0/art/screenshots/Screenshot_20240610_064407.png)
+![screenshot4](https://raw.githubusercontent.com/ehanahamed/timefall/main/art/screenshots/Screenshot_20240612-023025_Godot%20Editor%204.jpg)
