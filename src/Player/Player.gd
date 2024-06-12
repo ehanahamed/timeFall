@@ -73,6 +73,9 @@ func _physics_process(delta):
 			
 	move_and_slide()
 	
+	if Input.is_action_just_released("pause"):
+		Game.pause()
+	
 	if Game.health  <= 0:
 		queue_free()
 		get_tree().root.get_node("Controls").queue_free()

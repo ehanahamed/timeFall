@@ -37,7 +37,3 @@ func travelPlayer():
 		get_tree().root.get_node("Level/Player/Player").position.x = travelX
 		get_tree().root.get_node("Level/Player/Player").position.y = travelY
 		travel = false
-
-func _process(delta):
-	if Input.is_action_just_released("pause"):
-		pause()

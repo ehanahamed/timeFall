@@ -53,5 +53,10 @@ theme_override_font_sizes/font_size = 14
 text = "https://ehan.dev/timefall
 https://github.com/ehanahamed/timefall"
 
+[node name="MenuButton" type="MenuButton" parent="."]
+offset_right = 8.0
+offset_bottom = 8.0
+text = "Settings"
+
 [connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
