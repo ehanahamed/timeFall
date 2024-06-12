@@ -24,6 +24,7 @@ func _physics_process(delta):
 	if is_on_floor():
 		canExtraJump = false
 		canTimeFreeze = true
+		Game.canTravel = true
 
 	# Handle jump.
 	if Engine.time_scale != 0:
@@ -65,9 +66,10 @@ func _physics_process(delta):
 			else:
 				Engine.time_scale = 0.5
 	if Input.is_action_just_pressed("time_travel"):
-		if Game.level >= 3:
+		if Game.level >= 3 and Game.canTravel:
 			Game.travelX = position.x
 			Game.travelY = position.y
+			Game.canTravel = false
 			get_tree().root.get_node("Controls").queue_free()
 			Game.travelScene()
 			

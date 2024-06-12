@@ -7,6 +7,8 @@ var levelAlt = false
 var travel = false
 var travelX = 0
 var travelY = 0
+var canTravel = true
+var forceShowTouch = false
 
 func pause():
 	if paused == false:
