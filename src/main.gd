@@ -17,4 +17,9 @@ func _process(delta):
 	get_node("Logo").position.x = (get_viewport().get_visible_rect().size.x / 2)
 	get_node("Names").position.x = ((get_viewport().get_visible_rect().size.x / 2) - 234)
 	get_node("Play").position.x = ((get_viewport().get_visible_rect().size.x / 2) - 200)
+	get_node("Settings").position.x = ((get_viewport().get_visible_rect().size.x / 2) - 200)
 	get_node("Quit").position.x = ((get_viewport().get_visible_rect().size.x / 2) - 200)
+
+
+func _on_settings_pressed():
+	get_tree().change_scene_to_file("res://Settings.tscn")

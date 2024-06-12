@@ -12,15 +12,23 @@ script = ExtResource("1_g3qpp")
 offset_left = 360.0
 offset_top = 240.0
 offset_right = 760.0
-offset_bottom = 340.0
+offset_bottom = 320.0
 theme_override_font_sizes/font_size = 32
 text = "Play"
 
+[node name="Settings" type="Button" parent="."]
+offset_left = 360.0
+offset_top = 340.0
+offset_right = 760.0
+offset_bottom = 420.0
+theme_override_font_sizes/font_size = 32
+text = "Settings"
+
 [node name="Quit" type="Button" parent="."]
 offset_left = 360.0
-offset_top = 360.0
+offset_top = 440.0
 offset_right = 760.0
-offset_bottom = 460.0
+offset_bottom = 520.0
 theme_override_font_sizes/font_size = 32
 text = "Quit"
 
@@ -53,10 +61,6 @@ theme_override_font_sizes/font_size = 14
 text = "https://ehan.dev/timefall
 https://github.com/ehanahamed/timefall"
 
-[node name="MenuButton" type="MenuButton" parent="."]
-offset_right = 8.0
-offset_bottom = 8.0
-text = "Settings"
-
 [connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="Settings" to="." method="_on_settings_pressed"]
 [connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
